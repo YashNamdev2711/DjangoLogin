@@ -1,0 +1,12 @@
+#mymenu{
+    background:rgba(0, 0, 0,0.8);
+    color:whitesmoke;
+    height: 45px;
+}
+
+#mymenu ul li{
+    display: inline-block;
+   
+    padding: 16px ;
+    text-align: center;
+}

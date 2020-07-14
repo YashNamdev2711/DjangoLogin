@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HAey first Django</title>
+<style type='text/css' >
+
+#mymenu{
+    background:rgba(0, 0, 0,0.8);
+    color:whitesmoke;
+    height: 45px;
+}
+
+#mymenu ul li{
+    display: inline-block;
+   
+    padding: 16px ;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="mymenu">
+<ul>
+<li><a href={% url 'home' %}> Home</a></li>
+<li><a href={% url 'cprog' %}>C</a></li>
+<li><a href={% url 'javaprog' %}>Java Prog</a></li>
+<li><a href={% url 'pythonprog' %}>Python Prog</a></li>
+<li><a href={% url 'contact' %}>Contact</a></li>
+<li>About</li>
+</ul>
+</div>
+<h3>My Java Prog Page you can ask question here and also get your queries as welll</h3>
+{%  for i in da   %}
+{%  if i.lang == 'j'   %}
+<table cellpadding='12'>
+<tr>
+<td>Que={{i.question}}</td>
+</tr>
+<tr>
+<td>Ans={{i.ans}}</td>
+</tr>
+</table>
+{% endif %}    
+{% endfor %}
+
+</body>
+</html>

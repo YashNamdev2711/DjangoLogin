@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hey  Django User</title>
+<style type='text/css' >
+
+#mymenu{
+    background:rgba(0, 0, 0,0.8);
+    color:whitesmoke;
+    height: 45px;
+}
+
+#mymenu ul li{
+    display: inline-block;
+   
+    padding: 16px ;
+    text-align: center;
+}
+a:visited
+{
+    color: whitesmoke;
+}
+table
+{
+    width: 1000px;
+    box-shadow: 10px 10px 10px 10px; 
+}
+</style>
+</head>
+<body>
+<div id="mymenu">
+<ul>
+        
+        <li><a href={% url 'home' %}> Home</a></li>
+        <li><a href={% url 'cprog' %}>C prog</a></li>
+        <li><a href={% url 'javaprog' %}>Java Prog</a></li>
+        <li><a href={% url 'pythonprog' %}>Python Prog</a></li>
+        <li><a href={% url 'contact' %}>Contact</a></li>
+        <li>About</li>
+        </ul>
+        </div>
+    <h2>Hey this is  just a demo [roject so basically I have nothing to give you on the name of Contct us :-} 
+        but okay you can take mu private number therfore you can call  me when you need me.My no is <h3>7999460760</h3>
+    </h2>
+</body>
+</html>
